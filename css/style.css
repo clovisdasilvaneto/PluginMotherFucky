@@ -1,0 +1,83 @@
+* { margin: 0; padding: 0;}
+
+a,p,span {font-family: "arial"; font-size: 14px; text-decoration: none;}
+h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro"; font-size: 20px; font-weight: 100;}
+img {border: none; max-width: 100%;}
+ul,ol {list-style:none;}
+.clear {clear: both;}
+.center {padding-top: 1px; max-width: 1000px; margin: 0 auto;}
+.bolas {margin-bottom: 5px; margin-right:10px;float: left; width: 46px;height: 46px; border-radius: 100%; text-align: center; line-height: 46px; border:solid 1px #DDDDDD; font-family: arial; font-size: 30px; color: #19B899;}
+
+/****************************************************************/
+.verde {background: #1CBB9B; }
+.responsive { width: 100%;}
+.verde-b {background: #159F85;}
+
+#topo {padding-top: 1px; min-height: 110px;}
+.logo {float: left; margin-top: 10px;}
+#topo nav {padding-top: 1px;}
+#topo nav ul li {float: left;}
+#topo nav ul li a {-webkit-transition:all ease-out 0.5s;-moz-transition:all ease-out 0.5s;-o-transition:all ease-out 0.5s;-ms-transition:all ease-out 0.5s;transition:all ease-out 0.5s;text-shadow:0 0 100px #fff; margin:35px 0 0 40px;padding:5px 10px;display: block;color: #fff;font-family: "Source Sans Pro";font-size: 20px;font-weight: bold;}
+#topo nav ul li a:hover { background: #48C9B0; text-shadow: 0 0 1px #fff; }
+
+#twitter {margin: 43px 0 0 43px;float: left;}
+.face {margin-top: 32px;box-shadow: 0 0 0 16px transparent;border-radius: 100%;-webkit-transition:box-shadow ease-out 0.2s,-webkit-transform 0.5s ease-out;-moz-transition:box-shadow ease-out 0.2s,-webkit-transform 0.5s ease-out;-o-transition:box-shadow ease-out 0.2s,-webkit-transform 0.5s ease-out;-ms-transition:box-shadow ease-out 0.2s,-webkit-transform 0.5s ease-out;transition:box-shadow ease-out 0.2s,-webkit-transform 0.5s ease-out;}
+.face:hover{box-shadow: 0 0 0 0 #fff; -webkit-transform:rotateZ(360deg);}
+/************************** FIM DO TOPO ****************************************/
+
+#download {text-align: center; padding-top: 1px;}
+#download header h1{text-align: left; background: #fff; max-width: 678px; margin: 100px auto 30px; padding: 20px 40px; color: #19BA9A;}
+#download article a {-webkit-transition:background ease-out 0.5s;-moz-transition:background ease-out 0.5s;-o-transition:background ease-out 0.5s;-ms-transition:background ease-out 0.5s;transition:background ease-out 0.5s;background: #16A085;color: #fff;padding: 21px 55px;font-size: 26px;text-shadow: 0 0 2px #fff;display: inline-block;border-bottom: solid 4px #148F77;margin-bottom: 30px;}
+#download article a:hover {background: #48C9B0;}
+#download article a:active {border-bottom:none; border-left: solid 2px #148F77;border-top: solid 4px #148F77;}
+
+/********************** FIM DO DOWNLOAD ********************************/
+
+.left {float: left; max-width: 473px; margin-right: 20px;}
+.left h1,.right h1,#slider h1 {color: #19BA9A; font-weight: bold; margin-top: 40px; max-width: 481px; border-bottom: dotted 1px #aaa; padding-bottom: 8px;}
+.title{margin-top: 20px; margin-bottom: 11px; font-size: 18px; color:#19B999; line-height: 43px}
+.text {color: #AAAAAA; max-width: 468px;}
+
+.code {border-radius: 5px; margin-bottom: 10px; display: inline-block; padding: 20px 20px; width: 90%; color: #fff; margin-top: 15px;}
+.indentacao { margin-left: 20px;}
+.indentacao2 {margin-left: 30px;}
+
+/***********************************************************************/
+
+.right {overflow: hidden; margin-top: 27px;}
+.right .code {padding: 12px 20px 13px; }
+#sobre {margin-top: 30px; padding-top: 1px;max-width: 425px;}
+#eu {-webkit-transition:box-shadow ease-out 0.5s;-moz-transition:box-shadow ease-out 0.5s;-o-transition:box-shadow ease-out 0.5s;-ms-transition:box-shadow ease-out 0.5s;transition:box-shadow ease-out 0.5s;width: 117px; height: 117px; border-radius: 100%; background: url(../img/eu.jpg); text-align: center; line-height: 117px; color: transparent; font-size: 0; font-family: arial;}
+#eu:hover { -webkit-animation: mais 1s ease-in-out infinite alternate; -ms-animation: mais 1s ease-in-out infinite alternate; -o-animation: mais 1s ease-in-out infinite alternate; -moz-animation: mais 1s ease-in-out infinite alternate; animation: mais 1s ease-in-out infinite alternate;box-shadow: inset 0 0 0 61px rgba(0,0,0,0.3); text-shadow:0 0 1px #fff; font-size: 50px;}
+#develloper {margin-top: 10px}
+#develloper h1 {margin-top: 0px; margin-bottom: 15px;}
+
+@-webkit-keyframes mais {
+	50%{font-size: 50px;}
+	100%{font-size: 70px;}
+}@-moz-keyframes mais {
+	50%{font-size: 50px;}
+	100%{font-size: 70px;}
+}@-o-keyframes mais {
+	50%{font-size: 50px;}
+	100%{font-size: 70px;}
+}@-ms-keyframes mais {
+	50%{font-size: 50px;}
+	100%{font-size: 70px;}
+}@keyframes mais {
+	50%{font-size: 50px;}
+	100%{font-size: 70px;}
+}
+/****************************** FIM DA PARTE DIREITA *********************************/
+#slider {margin-top: 10px;}
+#motherFucky { margin-top: 20px;}
+#motherFucky img {border:solid 1px #ccc;}
+
+#footer {clear: both; margin-top: 35%; min-height: 148px;}
+#footer nav {padding-top: 1px;}
+#footer nav ul li {float: left;}
+#footer nav ul li a {-webkit-transition:all ease-out 0.5s;-moz-transition:all ease-out 0.5s;-o-transition:all ease-out 0.5s;-ms-transition:all ease-out 0.5s;transition:all ease-out 0.5s;text-shadow:0 0 100px #fff; margin:35px 0 0 40px;padding:5px 10px;display: block;color: #fff;font-family: "Source Sans Pro";font-size: 20px;font-weight: bold;}
+#footer nav ul li a:hover { background: #48C9B0; text-shadow: 0 0 1px #fff; }
+#footer .face {float: right;}
+#footer p {margin-top: 113px;text-align: right;color: #fff;}
+.link {text-decoration: underline; color: #fff;}
