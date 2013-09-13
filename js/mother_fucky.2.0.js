@@ -9,9 +9,13 @@
 
 				return this.each(function(){
 					var $objeto = $(this);
-					height = $objeto.find("img:eq(0)").height();
-					width = $objeto.find("img:eq(0)").width();
-					var legendaImagem = $objeto.find("img:eq(0)").data("legend");
+					//coloca a classe motherFucky
+					$objeto.addClass("motherFucky");
+
+					var $imagem = $objeto.find("img:eq(0)");
+					width = $objeto.width();
+					height = $objeto.height();
+					var legendaImagem = $imagem.data("legend");
 
 					$objeto.prepend("<nav id='controlMotherFucky'><ul></ul></nav>");
 
@@ -35,12 +39,18 @@
 						$objeto.find("img").hide();
 					}
 
-					$objeto.addClass("motherFucky").css({
-						"height":height+"px",
-						"width":width+"px"
-					}).find("img:eq(0)").show().addClass("ativo").end().find("img").css({
-							"height":height+"px",
-							"width":width+"px",
+					//verifica se existe uma largura setada para o pai do slider
+					if(!$objeto.width()){
+						$objeto.css("width","500px");
+					}
+					//verifica se existe uma altura setada para o pai do slider
+					if(!$objeto.height()){
+						$objeto.css("height","250px");
+					}
+
+					$objeto.show().find("img:eq(0)").show(0).addClass("ativo").end().find("img").css({
+							"width":"100%",
+							"height":"100%"
 					});
 
 					if(legendaImagem){
@@ -72,7 +82,7 @@
 						}else {
 							
 							$obj.fadeOut(options.speed).removeClass("ativo");
-							$objeto.find("img:eq(0)").fadeIn(options.speed).addClass("ativo");
+							$imagem.fadeIn(options.speed).addClass("ativo");
 
 							//verifica se há uma legenda na proxima imagem
 							legendaImagem = $(".ativo").data("legend");
